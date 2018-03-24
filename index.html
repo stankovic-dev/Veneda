@@ -8,7 +8,13 @@
     <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
     <link rel="stylesheet" href="assets/fonts/font-awesome.min.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
+    <link rel="stylesheet" href="assets/css/Footer-Basic.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.1.1/aos.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.8.2/css/lightbox.min.css">
     <link rel="stylesheet" href="https://unpkg.com/@bootstrapstudio/bootstrap-better-nav/dist/bootstrap-better-nav.min.css">
+    <link rel="stylesheet" href="assets/css/Lightbox-Gallery.css">
+    <link rel="stylesheet" href="assets/css/Map-Clean.css">
     <link rel="stylesheet" href="assets/css/styles.css">
 </head>
 
@@ -20,7 +26,7 @@
                         data-target="#navcol-1"><span class="sr-only">Toggle navigation</span><span class="navbar-toggler-icon"></span></button>
                     <div class="collapse navbar-collapse" id="navcol-1">
                         <ul class="nav navbar-nav mx-auto">
-                            <li class="nav-item" role="presentation"><a class="nav-link active" href="#">Restoran</a></li>
+                            <li class="nav-item" role="presentation"><a class="nav-link" href="#">Restoran</a></li>
                             <li class="nav-item" role="presentation"><a class="nav-link" href="#">Prenoćište</a></li>
                             <li class="nav-item" role="presentation"><a class="nav-link" href="#">Lokacija</a></li>
                         </ul>
@@ -30,35 +36,89 @@
                     </div>
                 </div>
             </nav>
-            <h1 class="text-center" id="title">Veneda</h1>
-            <h2 class="text-center" id="subtitle">Restoran sa prenoćištem</h2>
+            <h1 class="text-center" data-aos="fade-up" data-aos-delay="500" id="title">Veneda</h1>
+            <h2 class="text-center" data-aos="fade-up" data-aos-delay="600" id="subtitle">Restoran sa prenoćištem</h2>
         </div>
         <div id="hero-bottom">
             <div class="container">
                 <div class="row" style="margin-bottom:0px;">
-                    <div class="col">
+                    <div class="col" data-aos="fade-up" data-aos-delay="650">
                         <p class="text-center p-top"><i class="fa fa-road"></i>&nbsp;2.7 km</p>
                         <p class="text-center p-bot">Udaljenost od centra grada</p>
                     </div>
-                    <div class="col">
+                    <div class="col" data-aos="fade-up" data-aos-delay="800">
                         <p class="text-center p-top"><i class="fa fa-bed"></i>&nbsp;7</p>
                         <p class="text-center p-bot">Broj soba</p>
                     </div>
-                    <div class="col p-bot">
+                    <div class="col" data-aos="fade-up" data-aos-delay="950">
+                        <p class="text-center p-top"><i class="fa fa-users"></i>&nbsp;50</p>
+                        <p class="text-center p-bot">Kapacitet restorana</p>
+                    </div>
+                    <div class="col p-bot" data-aos="fade-up" data-aos-delay="1100">
                         <p class="text-center p-top"><i class="fa fa-clock-o"></i>&nbsp;00-24</p>
                         <p class="text-center">Recepcija</p>
                     </div>
-                    <div class="col align-self-center"><button class="btn btn-dark btn-block reserve-button" type="button">Rezerviši odmah</button></div>
+                    <div class="col align-self-center"><button class="btn btn-dark btn-block reserve-button" type="button" data-bs-hover-animate="pulse">Rezerviši odmah</button></div>
                 </div>
                 <div class="row">
-                    <div class="col"><button class="btn btn-link btn-block arrow-button" type="button" style="color:rgb(0,0,0);"><i class="fa fa-angle-down"></i></button></div>
+                    <div class="col"><button class="btn btn-link btn-block tada animated infinite arrow-button" type="button" style="color:rgb(0,0,0);"><i class="fa fa-angle-down"></i></button></div>
                 </div>
             </div>
         </div>
     </section>
-    <script src="assets/js/jquery.min.js"></script>
-    <script src="assets/bootstrap/js/bootstrap.min.js"></script>
-    <script src="https://unpkg.com/@bootstrapstudio/bootstrap-better-nav/dist/bootstrap-better-nav.min.js"></script>
+    <div id="restaurant" class="photo-gallery">
+        <div class="container">
+            <div class="intro">
+                <h2 class="text-center" data-aos="fade-up" data-aos-delay="50">Restoran</h2>
+                <p class="text-center" data-aos="fade-up" data-aos-delay="100">Restoran Veneda" je u urbanom delu Niša, na samo 300m od Merkatora. Ima svoj parking. Restoran ima 48 mesta kao letnju baštu sa 24 mesta.<br>U Restoranu je zastupljena internacinalna kao i domaća kuhinja. Naše osoblje je veoma profesionalno,
+                    sa znanjem stranih jezika.</p>
+            </div>
+            <div class="row photos">
+                <div class="col-sm-6 col-md-4 col-lg-3 item"><a href="assets/img/desk.jpg" data-lightbox="photos"><img class="img-fluid" src="assets/img/desk.jpg" data-aos="fade-up" data-aos-delay="200"></a></div>
+                <div class="col-sm-6 col-md-4 col-lg-3 item"><a href="assets/img/building.jpg" data-lightbox="photos"><img class="img-fluid" src="assets/img/building.jpg" data-aos="fade-up" data-aos-delay="350"></a></div>
+                <div class="col-sm-6 col-md-4 col-lg-3 item"><a href="assets/img/loft.jpg" data-lightbox="photos"><img class="img-fluid" src="assets/img/loft.jpg" data-aos="fade-up" data-aos-delay="500"></a></div>
+                <div class="col-sm-6 col-md-4 col-lg-3 item"><a href="assets/img/building.jpg" data-lightbox="photos"><img class="img-fluid" src="assets/img/building.jpg" data-aos="fade-up" data-aos-delay="650"></a></div>
+                <div class="col-sm-6 col-md-4 col-lg-3 item"><a href="assets/img/loft.jpg" data-lightbox="photos"><img class="img-fluid" src="assets/img/loft.jpg" data-aos="fade-up" data-aos-delay="200"></a></div>
+                <div class="col-sm-6 col-md-4 col-lg-3 item"><a href="assets/img/desk.jpg" data-lightbox="photos"><img class="img-fluid" src="assets/img/desk.jpg" data-aos="fade-up" data-aos-delay="350"></a></div>
+                <div class="col-sm-6 col-md-4 col-lg-3 item"><a href="assets/img/desk.jpg" data-lightbox="photos"><img class="img-fluid" src="assets/img/desk.jpg" data-aos="fade-up" data-aos-delay="500"></a></div>
+                <div class="col-sm-6 col-md-4 col-lg-3 item"><a href="assets/img/desk.jpg" data-lightbox="photos"><img class="img-fluid" src="assets/img/desk.jpg" data-aos="fade-up" data-aos-delay="650"></a></div>
+            </div>
+        </div>
+    </div>
+    <div id="accommodation" class="photo-gallery">
+        <div class="container">
+            <div class="intro">
+                <h2 class="text-center text-white" data-aos="fade-up" data-aos-delay="50">Prenoćište</h2>
+                <p class="text-center" data-aos="fade-up" data-aos-delay="100">U Prenoćištu Veneda na raspolaganju su 4 dvokrevetne sobe, 1 trokrevetna soba i 2 jednokrevetne sobe.<br>Veneda se nalzi u Duvaništu, jednom od najlepšh i nadinamičnijih delova Niša, a opet, dalje od gradske buke, i predstavlja idealno
+                    mesto za boravak poslovnih ljudi. Svaka od smeštajnih jedinica ima kupatilo, klima uređaj, LCD TV, telefon, kablovski internet, fen za kosu.</p>
+            </div>
+            <div class="row photos">
+                <div class="col-sm-6 col-md-4 col-lg-3 item"><a href="assets/img/desk.jpg" data-lightbox="photos"><img class="img-fluid" src="assets/img/desk.jpg" data-aos="fade-up" data-aos-delay="200"></a></div>
+                <div class="col-sm-6 col-md-4 col-lg-3 item"><a href="assets/img/building.jpg" data-lightbox="photos"><img class="img-fluid" src="assets/img/building.jpg" data-aos="fade-up" data-aos-delay="350"></a></div>
+                <div class="col-sm-6 col-md-4 col-lg-3 item"><a href="assets/img/loft.jpg" data-lightbox="photos"><img class="img-fluid" src="assets/img/loft.jpg" data-aos="fade-up" data-aos-delay="500"></a></div>
+                <div class="col-sm-6 col-md-4 col-lg-3 item"><a href="assets/img/building.jpg" data-lightbox="photos"><img class="img-fluid" src="assets/img/building.jpg" data-aos="fade-up" data-aos-delay="650"></a></div>
+                <div class="col-sm-6 col-md-4 col-lg-3 item"><a href="assets/img/loft.jpg" data-lightbox="photos"><img class="img-fluid" src="assets/img/loft.jpg" data-aos="fade-up" data-aos-delay="200"></a></div>
+                <div class="col-sm-6 col-md-4 col-lg-3 item"><a href="assets/img/desk.jpg" data-lightbox="photos"><img class="img-fluid" src="assets/img/desk.jpg" data-aos="fade-up" data-aos-delay="350"></a></div>
+                <div class="col-sm-6 col-md-4 col-lg-3 item"><a href="assets/img/desk.jpg" data-lightbox="photos"><img class="img-fluid" src="assets/img/desk.jpg" data-aos="fade-up" data-aos-delay="500"></a></div>
+                <div class="col-sm-6 col-md-4 col-lg-3 item"><a href="assets/img/desk.jpg" data-lightbox="photos"><img class="img-fluid" src="assets/img/desk.jpg" data-aos="fade-up" data-aos-delay="650"></a></div>
+            </div>
+        </div>
+    </div>
+    <div class="map-clean">
+        <div class="container">
+            <div class="intro">
+                <h2 class="text-center" data-aos="fade-up" data-aos-delay="50">Lokacija</h2>
+                <p class="text-center" data-aos="fade-up" data-aos-delay="100">Nalazimo se 2.7 km od centra grada i 200 metara od tržnog centra "Roda".</p>
+            </div>
+        </div><iframe allowfullscreen="" frameborder="0" width="100%" height="450" src="https://www.google.com/maps/embed/v1/place?key=AIzaSyD0yKIJbClB6-0ljKpSxvXCcc3wkVuj1X8&amp;q=Veneda+Hotel%2C+Nis%2C+Srbija&amp;zoom=15" data-aos="fade-up" data-aos-delay="1000"></iframe></div>
+    <div
+        class="footer-basic"></div>
+        <script src="assets/js/jquery.min.js"></script>
+        <script src="assets/bootstrap/js/bootstrap.min.js"></script>
+        <script src="assets/js/bs-animation.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.1.1/aos.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.8.2/js/lightbox.min.js"></script>
+        <script src="https://unpkg.com/@bootstrapstudio/bootstrap-better-nav/dist/bootstrap-better-nav.min.js"></script>
 </body>
 
 </html>
